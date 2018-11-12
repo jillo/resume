@@ -1,0 +1,313 @@
+# Page settings
+
+baseurl = "https://jill.200-ok.com/"
+languageCode = "en-us"
+title = "Jill Spreitzer's Resume"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Hugo Responsive Resume/CV Theme for Developers"
+    author = "Pavel Kanyshev"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Jill (Ott) Spreitzer"
+        tagline = "Senior Software Test Engineer"
+        avatar = "j_profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: jill@200-ok.com"
+        title = "jill@200-ok.com"
+
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:512-577-5855"
+        title = "512-577-5855"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//jill.200-ok.com"
+        title = "jill.200-ok.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/jill-spreitzer-b6885"
+        title = "Jill (Ott) Spreitzer"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/jillo"
+        title = "github.com/jillo"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/jillannott"
+        title = "@jillannott"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Bachelor of Arts, Telecommunications"
+        college = "Baylor University"
+        #dates = "2006 - 2010"
+
+#Commenting out the ContinuingEducation section for now, because it's not working properly
+    # Continuing Education section
+#    [params.conteducation]
+#        enable = true
+#        title = "Continuing Education"
+
+        # [[params.conteducation.list]]
+        # degree = "Programming Fundamentals using Python"
+        # college = "Austin Community College"
+        # dates = "2018"
+        #
+        # [[params.conteducation.list]]
+        # degree = "Introduction to Ruby on Rails"
+        # college = "GeekAustin"
+        # dates = "2011"
+        #
+        # [[params.conteducation.list]]
+        # degree = "Managing the Testing Process"
+        # college = "Software Quality Institute, UT Austin"
+        # dates = "2001"
+        #
+        # [[params.conteducation.list]]
+        # degree = "QA Internship"
+        # college = "SiteStuff, Inc."
+        # dates = "2001"
+        #
+    # Professional Organizations section
+    [params.professionalorganizations]
+        enable = true
+        title = "Professional Organizations"
+
+        [[params.professionalorganizations.list]]
+        degree = "Founding Member"
+        college = "AgileAustin"
+        #dates = "2006 - 2010"
+
+#todo
+#continuing education section - get line space between each items
+#Professional Organization Involvement section
+#Tools section
+#get the picture in
+
+
+    # Languages section
+    # can I change this to a continuing education section?
+  #  [params.language]
+  #      enable = true
+  #      title = "Languages"
+
+  #      [[params.language.list]]
+  #      language = "English"
+  #      level = "Native"
+
+  #      [[params.language.list]]
+  #      language = "French"
+  #      level = "Professional"
+
+  #      [[params.language.list]]
+  #      language = "Russian"
+  #      level = "Professional"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Yoga, Swimming, Cycling, Running, Snow skiing, Wakeboarding"
+
+        # [[params.interests.list]]
+        # interest = "Gardening"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "15+ years experience and training as a Software Test and Quality Assurance Engineer. Passionate about quality and a positive customer experience. Meticulous attention to detail and accuracy."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Quality Assurance, Senior Software Tester"
+        dates = "FEB 2018 - PRESENT"
+        company = "Permanent Legacy Foundation"
+        details = "Test Permanent.org, a Digital Archive dedicated to perennial data storage that will transcend technology over time\n\nWrite automated integration tests in Typescript using Jasmine and Protractor\n\nVerify system access with MFA\n\nTest upload and processing of all file types and sizes for performance and scalability\n\nTest integration with Facebook and Dropbox for importing files, images, and videos\n\nValidate role-based functionality"
+
+
+        [[params.jobs.list]]
+        position = "Software Quality Engineer"
+        dates = "JAN 2016 - NOV 2016"
+        company = "CS Disco"
+        details = "Tested e-Discovery software, focusing on fast and accurate search results with complex filters and search visualization, using Elastic search\n\nTested ingesting, validating, and culling large and complex data sets\n\n Ran automated test scripts, analyzed failures, worked with developers to identify cause of failures in code, and fix broken tests where necessary"
+
+        [[params.jobs.list]]
+        position = "Senior Software Tester"
+        dates = "JUL 2012 - DEC 2015"
+        company = "HomeAway"
+        details = "QA Team Lead for global vacation rental web application\n\nExecuted test automation suite against 5 locales (EN, DE, FR, ES, IT) for new builds, analyzed results, investigated failures, worked with offshore resources to identify test cases needing automation\n\nDeployed builds daily to shared and local test environments, tested newly delivered code, validated A/B test settings and 3rd party integration points (Expedia, Orbitz, Inns.com)\n\nManaged weekly releases of new features and defect fixes, including risk assessment of late check-ins, created release notes"
+
+        [[params.jobs.list]]
+        position = "Senior QA Engineer"
+        dates = "APR 2011 - JUL 2012"
+        company = "PeopleAdmin"
+        details = "QA Team Lead for SaaS HR/Talent Management web application developed with Ruby on Rails\n\nDeveloped, executed, and maintained automation test scripts using Cucumber\n\nReported status of test coverage and execution, defects, and new feature progress to stakeholders, including CEO"
+
+        [[params.jobs.list]]
+        position = "Senior QA Engineer"
+        dates = "JUL 2009 - APR 2011"
+        company = "Dovetail Software"
+        details = "Developed and maintained automated test scripts using StoryTeller, a Selenium driven TDD tool for .NET projects\n\nClosely reviewed commits and commit comments to ensure sufficient test coverage and defect verification\n\nCommitted fixes of minor defects such as spelling/grammatical errors and localization issues"
+
+        [[params.jobs.list]]
+        position = "Senior QA Engineer"
+        dates = "AUG 2006 - JUL 2009"
+        company = "Borland Software"
+        details = "Worked on Agile Scrum team to deliver Enterprise Application Lifecycle Management software, specifically the Agile Management component (Borland TeamFocus)\n\nContributed to development and maintenance of WATIR test automation scripts"
+
+        [[params.jobs.list]]
+        position = "Software QA Analyst"
+        dates = "FEB 2004 - AUG 2006"
+        company = "360Commerce (now Oracle Retail)"
+        details = "Tested Retail Point-Of-Sale, Back Office, and Central Office software, working closely with developers and business analysts regarding requirements and test cases"
+
+        [[params.jobs.list]]
+        position = "Software QA Analyst"
+        dates = "FEB 2003 - DEC 2003"
+        company = "Internet AutoParts"
+        details = "Tested entire eCommerce website as well as XML request and response documents third party gateways"
+
+        [[params.jobs.list]]
+        position = "Contract Test Engineer for BroadJump"
+        dates = "NOV 2002 - JAN 2003"
+        company = "AustinTest"
+        details = "Tested High Speed Internet DSL Installation and migration programs across multiple Operating Systems with a variety of internal and external modems"
+
+        [[params.jobs.list]]
+        position = "Extended Service Sales Representative,"
+        positionline2 = "Team Software Tester"
+        dates = "OCT 1999 - SEPT 2002"
+        company = "Dell Computer Corporation"
+        details = "Tested the Dell Order Management System application migration to SQL server, and the implementation of the Dell Customer Support System for  functionality and usability\n\nImproved automation of quote process by testing MS Access macro"
+
+
+
+
+    # # Projects section
+    # [params.projects]
+    #     enable = true
+    #     icon = "fa-archive"
+    #     title = "Projects"
+    #     intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+    #     [[params.projects.list]]
+    #     title = "Hugrid"
+    #     url = "https://github.com/aerohub/hugrid"
+    #     tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+    #     [[params.projects.list]]
+    #     title = "Simple FAQ Theme for Hugo"
+    #     url = "https://github.com/aerohub/hugo-faq-theme"
+    #     tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
+
+    #     [[params.projects.list]]
+    #     title = "Hugo Identity"
+    #     url = "https://github.com/aerohub/hugo-identity-theme"
+    #     tagline = "Little profile/card-style template for Hugo."
+
+    #     [[params.projects.list]]
+    #     title = "Orbit"
+    #     url = "https://github.com/aerohub/hugo-orbit-theme"
+    #     tagline = "Hugo Resume/CV Theme for Developers."
+
+    #     [[params.projects.list]]
+    #     title = "Me"
+    #     url = "https://github.com/aerohub/hugo-me-theme"
+    #     tagline = "A simple responsive Hugo theme for personal site."
+
+    # # Skills section
+    # [params.skills]
+    #     enable = true
+    #     icon = "fa-rocket"
+    #     title = "Skills & Proficiency"
+
+    #     [[params.skills.list]]
+    #     skill = "Python & Django"
+    #     level = "98%"
+
+    #     [[params.skills.list]]
+    #     skill = "Javascript & jQuery"
+    #     level = "98%"
+
+    #     [[params.skills.list]]
+    #     skill = "Angular"
+    #     level = "95%"
+
+    #     [[params.skills.list]]
+    #     skill = "HTML5 & CSS"
+    #     level = "95%"
+
+    #     [[params.skills.list]]
+    #     skill = "Ruby on Rails"
+    #     level = "75%"
+
+    #     [[params.skills.list]]
+    #     skill = "Sketch & Photoshop"
+    #     level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
